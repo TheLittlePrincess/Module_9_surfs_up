@@ -24,7 +24,7 @@ Station = Base.classes.station
 #create a session link from Python to our database
 session = Session(engine)
 # %%
-from flask import Flask
+#from flask import Flask
 #create a Flask application called "app."
 app = Flask(__name__)
 # %%
@@ -44,6 +44,7 @@ app = Flask(__name__)
     #/api/v1.0/tobs
     #/api/v1.0/temp/start/end
     #''')
+#%%
 def welcome():
     test = (f"Welcome to the Hawaii Climate Analysis API!<br/>"
             f"Available Routes:<br/>"
